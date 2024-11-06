@@ -66,6 +66,45 @@
 
 
 
+/* NOTES: what i found interesting was the new @media tag, because it is unlike any
+ive seen before, along with the usage of AND which i only expected to be used in regular
+coding used for tasks and jobs, not design */
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 520px) {
+  
+  .flex-container {
+    height: fit-content;
+  }
+  
+  .quarter {
+    width: 48%;
+  }
+  .third {
+    width: 48%;
+  }
+
+  .third:last-of-type {
+    flex-grow: 1;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  
+  .half, .quarter, .third {
+    min-width: 97%;
+  }
+    
+  .flex-container {
+    height: fit-content;
+  }
+  
+}
+
+
+
 
 /* Mobile Styles*/
 
